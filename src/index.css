@@ -38,14 +38,19 @@ body {
 
 .main {
   width: 50rem;
+  max-width: 100%;
+  padding: 0 1rem;
 }
 
 .app-header {
   width: 66rem;
+  max-width: 100%;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .error {
@@ -87,6 +92,15 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.description {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+  max-width: 80%;
+  color: var(--color-medium);
 }
 
 .progress {
@@ -144,11 +158,17 @@ progress {
   float: right;
 }
 
+.options-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+
 .options {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .btn-option {
@@ -185,6 +205,14 @@ progress {
 .result span {
   font-size: 2.2rem;
   margin-right: 4px;
+}
+
+.message {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-light);
+  font-weight: 500;
 }
 
 .highscore {
@@ -256,4 +284,73 @@ progress {
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
+}
+
+.explanation {
+  background-color: var(--color-dark);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  border-left: 5px solid var(--color-theme);
+}
+
+.explanation p {
+  line-height: 1.6;
+}
+
+.explanation strong {
+  color: var(--color-accent);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .app-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .btn-option:not([disabled]):hover {
+    transform: translateX(0);
+  }
+
+  .answer {
+    transform: translateX(0.8rem);
+  }
 }
