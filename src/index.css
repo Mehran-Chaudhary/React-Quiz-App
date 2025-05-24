@@ -354,3 +354,70 @@ progress {
     transform: translateX(0.8rem);
   }
 }
+
+.section-info {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+.sections-info {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 7px;
+}
+
+.sections-info h4 {
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.section {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.section-scores {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 7px;
+}
+
+.section-scores h3 {
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.section-score {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.instructions {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #e9ecef;
+  border-radius: 7px;
+  color: #495057;
+}
+
+.section-status {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.section-status .warning {
+  color: #e03131;
+  font-weight: 500;
+}
+
+.section-status .success {
+  color: #37b24d;
+  font-weight: 500;
+}

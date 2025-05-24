@@ -4,6 +4,7 @@ import Options from "./Options";
 function Question() {
   const { questions, index } = useQuiz();
   const question = questions.at(index);
+  if (!question) return <div>Loading question...</div>;
 
   console.log(question);
 

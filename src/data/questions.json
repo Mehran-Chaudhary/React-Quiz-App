@@ -219,6 +219,114 @@
       "correctOption": 1,
       "points": 10,
       "explanation": "Helicobacter pylori infection is the most common cause of chronic gastritis worldwide. This bacterium colonizes the gastric mucosa and causes inflammation that can lead to peptic ulcer disease and gastric cancer."
+    },
+    {
+      "question": "Which pathological feature is most characteristic of Alzheimer's disease?",
+      "options": [
+        "Lewy bodies",
+        "Neurofibrillary tangles",
+        "Pick bodies",
+        "Hirano bodies"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Neurofibrillary tangles, composed of hyperphosphorylated tau protein, are a hallmark microscopic feature of Alzheimer's disease, along with amyloid plaques."
+    },
+    {
+      "question": "Which of the following is a cause of secondary hypertension?",
+      "options": [
+        "Renal artery stenosis",
+        "Aging",
+        "Family history",
+        "Obesity"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Renal artery stenosis is a cause of secondary hypertension due to activation of the renin-angiotensin-aldosterone system. The other options are risk factors for essential (primary) hypertension."
+    },
+    {
+      "question": "Which hepatitis virus is most commonly associated with hepatocellular carcinoma?",
+      "options": [
+        "Hepatitis A virus",
+        "Hepatitis B virus",
+        "Hepatitis C virus",
+        "Hepatitis E virus"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Hepatitis B virus (HBV) has the strongest association with hepatocellular carcinoma (HCC), though Hepatitis C virus also increases risk. HBV can integrate into the host genome and promote carcinogenesis."
+    },
+    {
+      "question": "What is the most common type of lung cancer?",
+      "options": [
+        "Small cell carcinoma",
+        "Squamous cell carcinoma",
+        "Adenocarcinoma",
+        "Large cell carcinoma"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Adenocarcinoma is now the most common type of lung cancer overall, surpassing squamous cell carcinoma. It's particularly common in non-smokers and women."
+    },
+    {
+      "question": "Which renal disease is characterized by the deposition of IgA immune complexes in the mesangium?",
+      "options": [
+        "Minimal change disease",
+        "Membranous nephropathy",
+        "IgA nephropathy (Berger's disease)",
+        "Post-streptococcal glomerulonephritis"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "IgA nephropathy (Berger's disease) is characterized by mesangial deposition of IgA immune complexes, often presenting with hematuria following an upper respiratory infection."
+    },
+    {
+      "question": "Which of the following conditions is associated with thrombophilia?",
+      "options": [
+        "Bernard-Soulier syndrome",
+        "Factor V Leiden mutation",
+        "Wiskott-Aldrich syndrome",
+        "von Willebrand disease"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Factor V Leiden mutation causes resistance to activated protein C, leading to hypercoagulability and increased risk of venous thromboembolism. The other options are bleeding disorders."
+    },
+    {
+      "question": "In which type of shock is cardiac output insufficient despite normal blood volume?",
+      "options": [
+        "Hypovolemic shock",
+        "Cardiogenic shock",
+        "Septic shock",
+        "Neurogenic shock"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Cardiogenic shock occurs when the heart cannot pump blood effectively despite adequate blood volume, commonly due to myocardial infarction or severe heart failure."
+    },
+    {
+      "question": "Which of the following antibodies is associated with myasthenia gravis?",
+      "options": [
+        "Anti-nuclear antibodies",
+        "Anti-acetylcholine receptor antibodies",
+        "Anti-double stranded DNA antibodies",
+        "Anti-glomerular basement membrane antibodies"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Anti-acetylcholine receptor antibodies are found in about 85% of patients with myasthenia gravis. These autoantibodies bind to acetylcholine receptors at the neuromuscular junction, inhibiting neuromuscular transmission."
+    },
+    {
+      "question": "Which vitamin deficiency is associated with Wernicke-Korsakoff syndrome?",
+      "options": [
+        "Vitamin B1 (Thiamine)",
+        "Vitamin B3 (Niacin)",
+        "Vitamin B9 (Folate)",
+        "Vitamin B12 (Cobalamin)"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Vitamin B1 (Thiamine) deficiency causes Wernicke-Korsakoff syndrome, often seen in alcoholics due to poor nutrition. It presents with confusion, ataxia, and ophthalmoplegia (Wernicke's), followed by memory deficits (Korsakoff's)."
     }
   ]
 }
