@@ -15,9 +15,13 @@ import { useQuiz } from "../contexts/QuizContext";
 export default function App() {
   const { status, sectionCompleted } = useQuiz();
 
+  // Only show the header on initial screens (loading, error, ready)
+  const showHeader =
+    status === "loading" || status === "error" || status === "ready";
+
   return (
     <div className="app">
-      <Header />
+      {showHeader && <Header />}
 
       <Main>
         {status === "loading" && <Loader />}
