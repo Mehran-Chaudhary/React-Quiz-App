@@ -356,47 +356,57 @@ progress {
 }
 
 .section-info {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: #495057;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
+.section-info h3 {
+  color: var(--color-light);
+  margin-bottom: 0.5rem;
 }
 
 .sections-info {
   margin: 2rem 0;
-  padding: 1rem;
-  background-color: #f8f9fa;
+  padding: 1.5rem;
+  background-color: var(--color-dark);
   border-radius: 7px;
+  color: var(--color-light);
 }
 
 .sections-info h4 {
   margin-bottom: 1rem;
-  color: #495057;
+  color: var(--color-light);
 }
 
 .section {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  background-color: #e9ecef;
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  background-color: var(--color-darkest);
   border-radius: 4px;
 }
 
 .section-scores {
   margin: 2rem 0;
-  padding: 1rem;
-  background-color: #f8f9fa;
+  padding: 1.5rem;
+  background-color: var(--color-dark);
   border-radius: 7px;
+  color: var(--color-light);
 }
 
 .section-scores h3 {
-  margin-bottom: 1rem;
-  color: #495057;
+  margin-bottom: 1.5rem;
+  color: var(--color-light);
+  font-size: 2rem;
+  text-align: center;
 }
 
 .section-score {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  background-color: #e9ecef;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--color-darkest);
   border-radius: 4px;
+  font-size: 1.6rem;
 }
 
 .instructions {
@@ -418,6 +428,60 @@ progress {
 }
 
 .section-status .success {
-  color: #37b24d;
+  color: var(--color-theme);
   font-weight: 500;
+}
+
+.section-complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-complete h2 {
+  color: var(--color-theme);
+  margin-bottom: 2rem;
+}
+
+.section-complete p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.section-complete .btn {
+  margin-top: 2rem;
+  font-weight: 600;
+  background-color: var(--color-theme);
+  border-color: var(--color-theme);
+}
+
+.section-complete .btn:hover {
+  background-color: transparent;
+}
+
+.section-progress {
+  width: 100%;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.section-progress p {
+  margin-bottom: 0.8rem;
+}
+
+.section-progress-bar {
+  height: 1.2rem;
+  background-color: var(--color-darkest);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.section-progress-fill {
+  height: 100%;
+  background-color: var(--color-theme);
+  border-radius: 100px;
+  transition: width 0.5s ease;
 }

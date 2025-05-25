@@ -1,0 +1,290 @@
+{
+  "name": "Community Medicine",
+  "questions": [
+    {
+      "question": "What is the modern concept of health?",
+      "options": [
+        "Absence of disease",
+        "Complete physical, mental, and social well-being",
+        "Ability to work",
+        "Long life expectancy"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "The modern concept of health, as defined by WHO, is a state of complete physical, mental, and social well-being, not merely the absence of disease."
+    },
+    {
+      "question": "Which of these is NOT a dimension of health?",
+      "options": [
+        "Physical health",
+        "Mental health",
+        "Financial health",
+        "Social health"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Financial health is not considered a dimension of health. The main dimensions are physical, mental, and social health."
+    },
+    {
+      "question": "What is the primary purpose of health indicators?",
+      "options": [
+        "To measure disease burden",
+        "To track healthcare costs",
+        "To evaluate health status",
+        "To predict disease outbreaks"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Health indicators are used to evaluate and monitor the health status of a population."
+    },
+    {
+      "question": "Which of these is a primary prevention measure?",
+      "options": [
+        "Screening for disease",
+        "Vaccination",
+        "Rehabilitation",
+        "Palliative care"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Vaccination is a primary prevention measure as it prevents disease before it occurs."
+    },
+    {
+      "question": "What is the main difference between elimination and eradication of a disease?",
+      "options": [
+        "Elimination is global",
+        "Elimination is local",
+        "Elimination is permanent",
+        "There is no difference"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Elimination refers to stopping disease transmission in a specific geographic area, while eradication means stopping transmission worldwide."
+    },
+    {
+      "question": "Which of these is NOT a component of the epidemiological triad?",
+      "options": ["Host", "Agent", "Environment", "Vector"],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "The epidemiological triad consists of host, agent, and environment. Vector is not a component of the basic triad."
+    },
+    {
+      "question": "What is the primary purpose of disease surveillance?",
+      "options": [
+        "To treat patients",
+        "To monitor disease patterns",
+        "To conduct research",
+        "To provide healthcare"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Disease surveillance is used to monitor disease patterns and trends in a population."
+    },
+    {
+      "question": "Which of these is a secondary prevention measure?",
+      "options": [
+        "Vaccination",
+        "Screening",
+        "Health education",
+        "Environmental control"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Screening is a secondary prevention measure as it detects disease in early stages."
+    },
+    {
+      "question": "What is the main difference between incidence and prevalence?",
+      "options": [
+        "Incidence is total cases",
+        "Prevalence is new cases",
+        "Incidence is new cases",
+        "Prevalence is deaths"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Incidence measures new cases, while prevalence measures total cases at a point in time."
+    },
+    {
+      "question": "Which of these is NOT a level of prevention?",
+      "options": ["Primary", "Secondary", "Tertiary", "Quaternary"],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Quaternary is not a standard level of prevention. The levels are primary, secondary, and tertiary."
+    },
+    {
+      "question": "What is the primary purpose of health education?",
+      "options": [
+        "To treat disease",
+        "To prevent disease",
+        "To diagnose disease",
+        "To cure disease"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Health education aims to prevent disease by promoting healthy behaviors and lifestyles."
+    },
+    {
+      "question": "Which of these is a characteristic of endemic disease?",
+      "options": [
+        "Occurs worldwide",
+        "Occurs in one area",
+        "Occurs in outbreaks",
+        "Occurs in animals"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "An endemic disease is constantly present in a particular area or population."
+    },
+    {
+      "question": "What is the main difference between epidemic and pandemic?",
+      "options": [
+        "Epidemic is more severe",
+        "Pandemic is more widespread",
+        "Epidemic is more deadly",
+        "Pandemic is more treatable"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "A pandemic is an epidemic that has spread across multiple countries or continents."
+    },
+    {
+      "question": "Which of these is NOT a component of the web of causation?",
+      "options": [
+        "Host factors",
+        "Environmental factors",
+        "Social factors",
+        "Genetic factors"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Genetic factors are not a standard component of the web of causation, which focuses on social, environmental, and host factors."
+    },
+    {
+      "question": "What is the primary purpose of disease surveillance?",
+      "options": [
+        "To treat patients",
+        "To monitor disease patterns",
+        "To conduct research",
+        "To provide healthcare"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Disease surveillance is used to monitor disease patterns and trends in a population."
+    },
+    {
+      "question": "Which of these is a tertiary prevention measure?",
+      "options": [
+        "Vaccination",
+        "Screening",
+        "Rehabilitation",
+        "Health education"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Rehabilitation is a tertiary prevention measure as it aims to reduce disability and restore function after disease."
+    },
+    {
+      "question": "What is the main difference between mortality and morbidity?",
+      "options": [
+        "Mortality is death",
+        "Morbidity is death",
+        "Mortality is illness",
+        "Morbidity is recovery"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Mortality refers to death, while morbidity refers to illness or disease."
+    },
+    {
+      "question": "Which of these is NOT a type of health indicator?",
+      "options": [
+        "Mortality indicators",
+        "Morbidity indicators",
+        "Disability indicators",
+        "Financial indicators"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Financial indicators are not standard health indicators. Health indicators include mortality, morbidity, and disability indicators."
+    },
+    {
+      "question": "What is the primary purpose of disease prevention?",
+      "options": [
+        "To treat disease",
+        "To prevent disease",
+        "To diagnose disease",
+        "To cure disease"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Disease prevention aims to prevent the occurrence of disease before it happens."
+    },
+    {
+      "question": "Which of these is a characteristic of epidemic disease?",
+      "options": [
+        "Constant presence",
+        "Sudden increase",
+        "Worldwide spread",
+        "Animal origin"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "An epidemic is characterized by a sudden increase in the number of cases of a disease in a population."
+    },
+    {
+      "question": "What is the main difference between primary and secondary prevention?",
+      "options": [
+        "Primary is more effective",
+        "Secondary is more expensive",
+        "Primary prevents disease",
+        "Secondary prevents death"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Primary prevention prevents disease before it occurs, while secondary prevention detects and treats disease early."
+    },
+    {
+      "question": "Which of these is NOT a component of the epidemiological triad?",
+      "options": ["Host", "Agent", "Environment", "Vector"],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "The epidemiological triad consists of host, agent, and environment. Vector is not a component of the basic triad."
+    },
+    {
+      "question": "What is the primary purpose of health promotion?",
+      "options": [
+        "To treat disease",
+        "To prevent disease",
+        "To diagnose disease",
+        "To cure disease"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Health promotion aims to prevent disease by enabling people to increase control over their health."
+    },
+    {
+      "question": "Which of these is a characteristic of pandemic disease?",
+      "options": [
+        "Local spread",
+        "Global spread",
+        "Animal origin",
+        "Short duration"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "A pandemic is characterized by the global spread of a disease across multiple countries or continents."
+    },
+    {
+      "question": "What is the main difference between health and wellness?",
+      "options": [
+        "Health is absence of disease",
+        "Wellness is absence of disease",
+        "Health is complete well-being",
+        "Wellness is physical only"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Health is the absence of disease, while wellness is a broader concept that includes physical, mental, and social well-being."
+    }
+  ]
+}

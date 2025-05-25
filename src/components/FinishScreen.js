@@ -28,13 +28,23 @@ export default function FinishScreen() {
 
       <div className="section-scores">
         <h3>Section Scores:</h3>
-        {sections.map((section, index) => (
-          <div key={index} className="section-score">
-            <p>
-              {section.name}: {sectionScores[index]} points
-            </p>
+        {sectionScores && sectionScores.length > 0 ? (
+          sections.map(
+            (section, index) =>
+              index < sectionScores.length && (
+                <div key={index} className="section-score">
+                  <p>
+                    <strong>{section.name}:</strong> {sectionScores[index]}{" "}
+                    points
+                  </p>
+                </div>
+              )
+          )
+        ) : (
+          <div className="section-score">
+            <p>No section scores available</p>
           </div>
-        ))}
+        )}
       </div>
 
       <p className="highscore">(Highscore: {highscore} points)</p>

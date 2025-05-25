@@ -1,0 +1,340 @@
+{
+  "name": "Pharmacology",
+  "questions": [
+    {
+      "question": "What is the main difference between a drug and a prodrug?",
+      "options": [
+        "A prodrug is inactive until metabolized",
+        "A prodrug is more potent",
+        "A prodrug has fewer side effects",
+        "A prodrug is synthetic"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "A prodrug is an inactive compound that is converted into an active drug through metabolic processes."
+    },
+    {
+      "question": "Which of the following best describes an agonist?",
+      "options": [
+        "A drug that blocks receptor activity",
+        "A drug that activates receptors",
+        "A drug that has no effect on receptors",
+        "A drug that destroys receptors"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "An agonist is a drug that activates receptors to produce a biological response."
+    },
+    {
+      "question": "What is the primary function of second messengers in cell signaling?",
+      "options": [
+        "To transport drugs across cell membranes",
+        "To amplify signals from receptors",
+        "To break down drugs",
+        "To store drugs in cells"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Second messengers amplify signals from receptors to produce a cellular response."
+    },
+    {
+      "question": "Which of these is NOT a phase of drug metabolism?",
+      "options": ["Absorption", "Distribution", "Metabolism", "Excretion"],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Absorption is part of pharmacokinetics but not a phase of drug metabolism. The phases of metabolism are distribution, metabolism, and excretion."
+    },
+    {
+      "question": "What is the main difference between a partial agonist and a full agonist?",
+      "options": [
+        "Partial agonists are more potent",
+        "Full agonists produce maximum response",
+        "Partial agonists have no effect",
+        "Full agonists are always safer"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Full agonists produce maximum response at the receptor, while partial agonists produce a submaximal response even at high concentrations."
+    },
+    {
+      "question": "Which of these is NOT a phase of drug metabolism?",
+      "options": [
+        "Phase I reactions",
+        "Phase II reactions",
+        "Phase III reactions",
+        "Phase IV reactions"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Drug metabolism typically involves Phase I (oxidation, reduction, hydrolysis) and Phase II (conjugation) reactions. Phase IV is not a standard term."
+    },
+    {
+      "question": "What is the primary function of cytochrome P450 enzymes?",
+      "options": [
+        "Drug absorption",
+        "Drug distribution",
+        "Drug metabolism",
+        "Drug excretion"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Cytochrome P450 enzymes are primarily involved in Phase I drug metabolism, particularly oxidation reactions."
+    },
+    {
+      "question": "Which of these best describes an inverse agonist?",
+      "options": [
+        "Activates receptor",
+        "Blocks receptor",
+        "Produces opposite effect of agonist",
+        "Has no effect"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "An inverse agonist produces the opposite effect of an agonist at the same receptor."
+    },
+    {
+      "question": "What is the main difference between competitive and non-competitive antagonists?",
+      "options": [
+        "Competitive bind to different sites",
+        "Non-competitive bind to same site",
+        "Competitive can be overcome by increasing agonist",
+        "Non-competitive are always reversible"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Competitive antagonists bind to the same site as the agonist and can be overcome by increasing agonist concentration."
+    },
+    {
+      "question": "Which of these is NOT a type of drug receptor?",
+      "options": [
+        "Ion channel",
+        "G-protein coupled",
+        "Enzyme-linked",
+        "DNA-linked"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "DNA-linked is not a standard type of drug receptor. Common receptor types include ion channels, G-protein coupled, and enzyme-linked receptors."
+    },
+    {
+      "question": "What is the primary function of second messengers?",
+      "options": [
+        "Drug transport",
+        "Signal amplification",
+        "Drug metabolism",
+        "Receptor binding"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Second messengers amplify signals from receptors to produce a cellular response."
+    },
+    {
+      "question": "Which of these is a characteristic of zero-order kinetics?",
+      "options": [
+        "Constant rate of elimination",
+        "Rate depends on concentration",
+        "Half-life is constant",
+        "First-order process"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "explanation": "Zero-order kinetics is characterized by a constant rate of elimination regardless of drug concentration."
+    },
+    {
+      "question": "What is the main difference between a drug and a placebo?",
+      "options": [
+        "Placebo is more effective",
+        "Drug has active ingredient",
+        "Placebo is always safe",
+        "Drug is always synthetic"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "A drug contains an active ingredient that produces a biological effect, while a placebo does not."
+    },
+    {
+      "question": "Which of these is NOT a common source of drugs?",
+      "options": ["Plants", "Animals", "Minerals", "Synthetic chemicals"],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Minerals are not a common source of drugs. Drugs are typically derived from plants, animals, or synthetic chemicals."
+    },
+    {
+      "question": "What is the primary function of drug transporters?",
+      "options": [
+        "Drug metabolism",
+        "Drug distribution",
+        "Drug elimination",
+        "Drug synthesis"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Drug transporters help in the distribution of drugs across cell membranes and tissues."
+    },
+    {
+      "question": "Which of these is a characteristic of first-pass metabolism?",
+      "options": [
+        "Occurs in kidneys",
+        "Reduces oral bioavailability",
+        "Increases drug effect",
+        "Only affects IV drugs"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "First-pass metabolism occurs in the liver and reduces the bioavailability of orally administered drugs."
+    },
+    {
+      "question": "What is the main difference between a drug's potency and efficacy?",
+      "options": [
+        "Potency is maximum effect",
+        "Efficacy is dose required",
+        "Potency is dose required",
+        "Efficacy is safety profile"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Potency refers to the amount of drug required to produce an effect, while efficacy is the maximum effect a drug can produce."
+    },
+    {
+      "question": "Which of these is NOT a type of drug interaction?",
+      "options": ["Pharmacokinetic", "Pharmacodynamic", "Physical", "Chemical"],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Physical is not a standard type of drug interaction. Drug interactions are typically pharmacokinetic or pharmacodynamic."
+    },
+    {
+      "question": "What is the primary function of drug receptors?",
+      "options": [
+        "Drug metabolism",
+        "Signal transduction",
+        "Drug elimination",
+        "Drug synthesis"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Drug receptors are responsible for signal transduction, converting drug binding into a cellular response."
+    },
+    {
+      "question": "Which of these is a characteristic of drug tolerance?",
+      "options": [
+        "Increased response",
+        "Decreased response",
+        "No change in response",
+        "Variable response"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Drug tolerance is characterized by a decreased response to a drug after repeated administration."
+    },
+    {
+      "question": "What is the main difference between a drug's therapeutic index and margin of safety?",
+      "options": [
+        "Therapeutic index is higher",
+        "Margin of safety is more precise",
+        "Therapeutic index is ratio",
+        "Margin of safety is ratio"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Therapeutic index is a ratio of toxic dose to effective dose, while margin of safety is the difference between these doses."
+    },
+    {
+      "question": "Which of these is NOT a phase of clinical trials?",
+      "options": ["Phase I", "Phase II", "Phase III", "Phase V"],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Phase V is not a standard phase of clinical trials. The phases are I through IV."
+    },
+    {
+      "question": "What is the primary function of drug metabolism?",
+      "options": [
+        "Increase drug activity",
+        "Decrease drug activity",
+        "Maintain drug levels",
+        "Prevent drug absorption"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Drug metabolism primarily serves to decrease drug activity and prepare drugs for elimination."
+    },
+    {
+      "question": "Which of these is a characteristic of drug distribution?",
+      "options": [
+        "Only to target tissue",
+        "Throughout the body",
+        "Only to liver",
+        "Only to kidneys"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Drug distribution occurs throughout the body, not just to specific tissues."
+    },
+    {
+      "question": "What is the main difference between a drug's half-life and duration of action?",
+      "options": [
+        "Half-life is longer",
+        "Duration is elimination time",
+        "Half-life is elimination time",
+        "Duration is metabolism time"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Half-life is the time required to eliminate half of the drug, while duration of action is how long the drug produces its effect."
+    },
+    {
+      "question": "Which of these is NOT a factor affecting drug absorption?",
+      "options": ["pH", "Blood flow", "Drug metabolism", "Surface area"],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Drug metabolism is not a factor affecting absorption. Factors affecting absorption include pH, blood flow, and surface area."
+    },
+    {
+      "question": "What is the primary function of drug excretion?",
+      "options": [
+        "Drug activation",
+        "Drug distribution",
+        "Drug elimination",
+        "Drug metabolism"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Drug excretion is the process of eliminating drugs from the body."
+    },
+    {
+      "question": "Which of these is a characteristic of drug bioavailability?",
+      "options": [
+        "Same for all routes",
+        "Higher for oral than IV",
+        "Lower for oral than IV",
+        "Not affected by route"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Oral bioavailability is typically lower than IV due to first-pass metabolism and incomplete absorption."
+    },
+    {
+      "question": "What is the main difference between a drug's onset and duration of action?",
+      "options": [
+        "Onset is longer",
+        "Duration is time to start",
+        "Onset is time to start",
+        "Duration is elimination time"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Onset of action is the time until the drug starts working, while duration is how long the effect lasts."
+    },
+    {
+      "question": "Which of these is NOT a type of drug receptor?",
+      "options": [
+        "Ion channel",
+        "G-protein coupled",
+        "Enzyme-linked",
+        "Membrane-linked"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "Membrane-linked is not a standard type of drug receptor. Common types include ion channels, G-protein coupled, and enzyme-linked receptors."
+    }
+  ]
+}

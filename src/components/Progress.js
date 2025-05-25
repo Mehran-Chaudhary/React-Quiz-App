@@ -1,30 +1,30 @@
 import { useQuiz } from "../contexts/QuizContext";
 
-export default function Progress() {
+function Progress() {
   const {
     index,
     numQuestions,
     points,
     maxPossiblePoints,
     answer,
-    currentSection,
     sections,
+    currentSection,
     wrongAnswers,
+    sectionScores,
   } = useQuiz();
-
-  const remainingQuestions = numQuestions - (index + 1);
   const wrongAnswersCount = wrongAnswers.length;
+  const currentSectionName =
+    sections[currentSection]?.name || "Current Section";
 
   return (
     <header className="progress">
       <div className="section-info">
-        <p>
-          Section {currentSection + 1} of {sections.length}:{" "}
-          {sections[currentSection]
-            ? sections[currentSection].name
-            : "Loading..."}
-        </p>
-        <p className="section-status">
+        <h3>
+          Section {currentSection + 1}/{sections.length}:{" "}
+          <strong>{currentSectionName}</strong>
+        </h3>
+
+        <div className="section-status">
           {wrongAnswersCount > 0 ? (
             <span className="warning">
               {wrongAnswersCount} incorrect answer
@@ -34,18 +34,21 @@ export default function Progress() {
           ) : (
             <span className="success">All answers correct so far!</span>
           )}
-        </p>
+        </div>
       </div>
+
       <progress max={numQuestions} value={index + Number(answer !== null)} />
 
-      <p>
-        Question <strong>{index + 1}</strong> / {numQuestions}
-        {remainingQuestions > 0 && ` (${remainingQuestions} remaining)`}
-      </p>
-
-      <p>
-        <strong>{points}</strong> / {maxPossiblePoints} points
-      </p>
+      <div className="progress-data">
+        <p>
+          Question <strong>{index + 1}</strong> / {numQuestions}
+        </p>
+        <p>
+          <strong>{points}</strong> / {maxPossiblePoints} points
+        </p>
+      </div>
     </header>
   );
 }
+
+export default Progress;

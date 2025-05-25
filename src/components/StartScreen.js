@@ -3,6 +3,13 @@ import { useQuiz } from "../contexts/QuizContext";
 export default function StartScreen() {
   const { numQuestions, dispatch, sections } = useQuiz();
 
+  console.log("StartScreen rendered with sections:", sections);
+  console.log("Number of sections:", sections.length);
+  console.log(
+    "Section names:",
+    sections.map((s) => s.name)
+  );
+
   return (
     <div className="start">
       <h2>Welcome to the Medical Quiz!</h2>

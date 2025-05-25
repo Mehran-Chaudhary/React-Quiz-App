@@ -1,5 +1,8 @@
 import { createContext, useContext, useReducer, useEffect } from "react";
-import questionsData from "../data/questions.json";
+// Import the three section files instead of the single questions file
+import section1Data from "../data/section1.json";
+import section2Data from "../data/section2.json";
+import section3Data from "../data/section3.json";
 
 const QuizContext = createContext();
 
@@ -109,7 +112,15 @@ function reducer(state, action) {
         // Check if all questions were answered correctly
         const allCorrect = state.wrongAnswers.length === 0;
 
+        console.log("End of section reached!");
+        console.log("Current section:", state.currentSection);
+        console.log("Wrong answers:", state.wrongAnswers);
+        console.log("All correct?", allCorrect);
+        console.log("Section score:", sectionScore);
+        console.log("Updated section scores:", newSectionScores);
+
         if (!allCorrect) {
+          console.log("Not all correct, restarting section");
           // If not all correct, restart the section with randomized questions
           return {
             ...state,
@@ -122,44 +133,85 @@ function reducer(state, action) {
           };
         }
 
-        if (state.currentSection === state.sections.length - 1) {
-          // Last section completed
-          return {
-            ...state,
-            status: "finished",
-            highscore:
-              state.points > state.highscore ? state.points : state.highscore,
-            sectionScores: newSectionScores,
-          };
-        } else {
-          // Move to next section
-          const nextSection = state.currentSection + 1;
-          const nextQuestions =
-            state.sections[nextSection] &&
-            Array.isArray(state.sections[nextSection].questions)
-              ? state.sections[nextSection].questions.map(randomizeOptions)
-              : [];
-          return {
-            ...state,
-            currentSection: nextSection,
-            questions: nextQuestions,
-            index: 0,
-            answer: null,
-            points: 0,
-            wrongAnswers: [],
-            secondsRemaining: nextQuestions.length * SECS_PER_QUESTION,
-            sectionScores: newSectionScores,
-          };
-        }
+        // THIS IS THE CRITICAL PART - ALWAYS stay in "active" status with sectionCompleted=true,
+        // NEVER go to "finished" directly (that's only for the final screen after all sections)
+        console.log("Section completed, showing transition screen");
+        return {
+          ...state,
+          status: "active",
+          sectionCompleted: true,
+          sectionScores: newSectionScores,
+        };
       }
       return { ...state, index: state.index + 1, answer: null };
-    case "finish":
+    case "continueSections":
+      console.log("Continuing to next section");
+      const nextSection = state.currentSection + 1;
+      console.log("Total sections:", state.sections.length);
+      console.log("Current section:", state.currentSection);
+      console.log("Moving to section:", nextSection);
+
+      // Fix: Check if we're trying to go beyond the available sections
+      if (nextSection >= state.sections.length) {
+        console.log("REACHED END OF ALL SECTIONS");
+        return {
+          ...state,
+          status: "finished",
+          highscore:
+            state.points > state.highscore ? state.points : state.highscore,
+        };
+      }
+
+      // Get next section questions
+      const nextSectionData = state.sections[nextSection];
+      console.log("Next section name:", nextSectionData?.name);
+      console.log(
+        "Next section questions count:",
+        nextSectionData?.questions?.length
+      );
+
+      // Randomize next section questions
+      const nextQuestions =
+        nextSectionData &&
+        Array.isArray(nextSectionData.questions) &&
+        nextSectionData.questions.length > 0
+          ? nextSectionData.questions.map(randomizeOptions)
+          : [];
+
+      console.log(
+        "Processed question count for next section:",
+        nextQuestions.length
+      );
+
+      if (nextQuestions.length === 0) {
+        console.error("ERROR: No questions found for next section!");
+        // If no questions, go to finished state rather than showing empty questions
+        return {
+          ...state,
+          status: "finished",
+          highscore:
+            state.points > state.highscore ? state.points : state.highscore,
+        };
+      }
+
+      // Move to next section, keep status as "active"
       return {
         ...state,
-        status: "finished",
-        highscore:
-          state.points > state.highscore ? state.points : state.highscore,
+        status: "active",
+        sectionCompleted: false,
+        currentSection: nextSection,
+        questions: nextQuestions,
+        index: 0,
+        answer: null,
+        points: 0,
+        wrongAnswers: [],
+        secondsRemaining: nextQuestions.length * SECS_PER_QUESTION,
       };
+    case "finish":
+      // For consistency, always redirect to continueSections, which will handle
+      // section transitions and finishing the quiz
+      console.log("Finish action redirecting to continueSections");
+      return reducer(state, { type: "continueSections" });
     case "restart":
       return {
         ...initialState,
@@ -169,6 +221,11 @@ function reducer(state, action) {
             ? state.sections[0].questions.map(randomizeOptions)
             : [],
         status: "ready",
+        highscore: state.highscore,
+        currentSection: 0,
+        sectionScores: [],
+        sectionCompleted: false,
+        wrongAnswers: [],
       };
     case "tick":
       return {
@@ -194,6 +251,7 @@ function QuizProvider({ children }) {
       highscore,
       secondsRemaining,
       sectionScores,
+      sectionCompleted,
       wrongAnswers,
     },
     dispatch,
@@ -207,48 +265,53 @@ function QuizProvider({ children }) {
 
   useEffect(function () {
     try {
-      console.log("Loaded questionsData:", questionsData);
+      console.log("Loading sections data from separate files...");
 
-      // More detailed debugging
-      if (!questionsData) {
-        console.error("questionsData is undefined or null");
-        dispatch({ type: "dataFailed" });
-        return;
-      }
+      // Combine the three section files into one sections array
+      const formattedData = {
+        sections: [section1Data, section2Data, section3Data],
+      };
 
-      console.log("questionsData type:", typeof questionsData);
-      console.log("Has sections?", Boolean(questionsData.sections));
-
-      // Convert flat structure to sections structure if needed
-      let formattedData = questionsData;
-
-      // If data has questions array but no sections array, convert it
-      if (questionsData.questions && !questionsData.sections) {
-        console.log("Converting flat questions array to sections format");
-        formattedData = {
-          sections: [
-            {
-              name: "General Section",
-              questions: questionsData.questions,
-            },
-          ],
-        };
-        console.log("Converted data:", formattedData);
-      }
-
-      // Now check if the (possibly converted) data has valid sections
+      // Validate the combined data
       if (
         !formattedData.sections ||
         !Array.isArray(formattedData.sections) ||
         formattedData.sections.length === 0
       ) {
-        console.error("Invalid data structure after conversion");
+        console.error(
+          "ERROR: Invalid data structure after combining section files"
+        );
         dispatch({ type: "dataFailed" });
         return;
       }
 
-      // Log the first section for verification
-      console.log("First section after processing:", formattedData.sections[0]);
+      // Full validation of sections
+      console.log("=== SECTION VALIDATION ===");
+      console.log(`Total sections: ${formattedData.sections.length}`);
+      let totalQuestions = 0;
+
+      formattedData.sections.forEach((section, index) => {
+        const questionCount = section.questions?.length || 0;
+        console.log(
+          `Section ${index + 1}: ${section.name} - ${questionCount} questions`
+        );
+        totalQuestions += questionCount;
+
+        // Check for malformed questions
+        if (questionCount > 0) {
+          const firstQuestion = section.questions[0];
+          const lastQuestion = section.questions[questionCount - 1];
+          console.log(
+            `First question: "${firstQuestion?.question?.substring(0, 30)}..."`
+          );
+          console.log(
+            `Last question: "${lastQuestion?.question?.substring(0, 30)}..."`
+          );
+        }
+      });
+
+      console.log(`Total questions across all sections: ${totalQuestions}`);
+      console.log("=== END VALIDATION ===");
 
       dispatch({ type: "dataReceived", payload: formattedData });
     } catch (error) {
@@ -273,6 +336,7 @@ function QuizProvider({ children }) {
         maxPossiblePoints,
         sectionScores,
         wrongAnswers,
+        sectionCompleted,
         dispatch,
       }}
     >
